@@ -17,13 +17,13 @@ import React, { Component } from "react";
 import { Provider } from "react-redux";
 
 import store from './src/store'
-import NewsList from "./src/NewsList";
+import NewsChannel from './app/NewsList'
 
 export default class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <NewsList/>
+        <NewsChannel />
       </Provider>
 
     )
