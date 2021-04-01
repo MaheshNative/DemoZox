@@ -1,9 +1,9 @@
 import React from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import { requestApiData } from "../src/actions";
+import { requestApiData } from "../../src/actions";
 import Style from './NewListStyles'
-import { View, Text, StyleSheet, Dimensions, TextInput, Image, TouchableOpacity, ScrollView, ToastAndroid, FlatList, Pressable, StatusBar, Alert } from 'react-native';
+import { View, Text, StyleSheet, Dimensions, TextInput, Image, TouchableOpacity, ScrollView,  FlatList, Pressable, StatusBar, Alert } from 'react-native';
 import { Card, Left, CardItem, Item, Input, Icon, Label, Button, Right, Picker } from 'native-base';
 
 
@@ -21,26 +21,26 @@ class NewsChannel extends React.Component {
       return (
 
         <View key={index}>
-          <Card style={{ backgroundColor: '#EAFAF1', marginVertical: 10 }}>
+          <Card style={Style.card}>
 
 
-            <View style={{ width: width - 60, alignSelf: 'center', marginVertical: 5, }}>
+            <View style={Style.view}>
               <Text style={Style.head}>Author :- </Text>
               <Text style={{ color: '#4D5656', }}>{item.author} </Text>
             </View>
 
-            <View style={{ width: width - 60, alignSelf: 'center', marginVertical: 5, }}>
+            <View style={Style.view}>
               <Text style={Style.head}>Published At:-</Text>
               <Text style={{ color: '#4D5656' }} numberOfLines={4}>{item.publishedAt} </Text>
             </View>
 
-            <View style={{ width: width - 60, alignSelf: 'center', marginVertical: 5 }}>
+            <View style={Style.view}>
               <Text style={Style.head}>Description:-  </Text>
               <Text style={{ color: '#4D5656' }} numberOfLines={4}>{item.description} </Text>
             </View>
 
-            <View style={{ width: width - 60, alignSelf: 'center', marginVertical: 5 }}>
-              <Text style={{  }}>Content:- </Text>
+            <View style={Style.view}>
+              <Text style={Style.head}>Content:- </Text>
               <Text style={{ color: '#4D5656' }} numberOfLines={4}>{item.content} </Text>
             </View>
 

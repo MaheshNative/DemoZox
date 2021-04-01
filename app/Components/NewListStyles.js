@@ -15,6 +15,12 @@ export default StyleSheet.create({
     },
     head: {
         color: '#1B2631', fontWeight: 'bold'
+    },
+    view:{
+        width: width - 60, alignSelf: 'center', marginVertical: 5,
+    },
+    card:{
+        backgroundColor: '#EAFAF1', marginVertical: 10, paddingBottom:5, marginBottom:10 
     }
 
 })
